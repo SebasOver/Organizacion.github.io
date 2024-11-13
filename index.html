@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<!-- Lenguaje -->
+<html lang="es">
+<!-- Cabecera de la página -->
+<head>
+    <!-- Impirmir caracteres especiales como la ñ -->   
+    <meta charset="UTF-8">
+    <!-- Adaptación a las resoluciones de pantalla -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Declaracion de estilos -->
+    <link rel="stylesheet" type="text/css" href="jquery/jquery.mobile-1.3.0.css">
+
+    <!-- Declaracion de scrips jquery y adicionales -->
+    <script type="text/javascript" charset="utf-8" src="jquery/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8" src="jquery/jquery.mobile-1.3.0.js"></script>
+</head>
+
+<body> 
+<!-- Versión 1.0 ORGANIZACION DE COMPUTADORES APP -->
+<!-- Por: Jeison M. Delgado G. -->
+<!-- Start of first page -->
+<div data-role="page" id="inicio">
+
+    <div data-role="header" data-theme="d">
+        <h1>UNIVERSIDAD DE SANTANDER</h1>
+    </div><!-- /header -->
+
+    <div data-role="content">
+        <center>
+            <img src="img/odpcs123.gif" style="border-radius: 5px; width: 360px;">
+            <h2>Organización de Computadores</h2>  
+        </center> 
+        <p>Sistema de apoyo interactivo para la materia de Organización de Computadores. 
+        A través de este menú de opciones, podrán explorar y profundizar en los diferentes conceptos que se han abordado en clase. 
+        El objetivo es proporcionar un entorno donde puedan elegir qué temas revisar y reforzar según sus necesidades académicas.</p>
+        <center>
+            <a href="#menu" data-role="button" data-icon="check" data-iconpos="right" data-theme="d" data-inline="true"> INICIAR </a>
+        </center>
+    </div><!-- /content -->
+</div><!-- /page -->
+<!-- End of first page -->
+
+<!-- Start of second page -->
+<div data-role="page" id="menu">
+    <div data-role="header" data-theme="d">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#inicio" data-role="button" data-icon="home" data-iconpos="left"></a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div><!-- /header -->
+    <div data-role="content" data-theme="d">   
+        <center>
+            <h1>Menú</h1>
+        </center>
+        <ul data-role="listview" data-inset="false" data-filter="false">
+            <li><a href="#pag1">Estructura y Funcionamiento de la Máquina Abacus</a></li>
+            <li><a href="#pag2">Características de la Máquina Super Abacus</a></li>
+            <li><a href="#pag3">Arquitectura de Von Neumann</a></li>
+            <li><a href="#pag4">Memoria Principal y Memoria Secundaria</a></li>
+            <li><a href="#pag5">Unidades de Almacenamiento</a></li>
+            <li><a href="#pag6">Ciclo de Instrucción del Procesador</a></li>
+            <li><a href="#pag7">Evaluación y Pruebas</a></li>  
+            <li><a href="#pag8">Tendencias Futuras en la Organización de Computadores</a></li>  
+            <!--<li><a href="#pag9">-_-</a></li>-->            
+        </ul>
+    </div><!-- /content -->
+</div><!-- /page -->
+<!-- End of second page -->
+
+<div data-role="page" id="pag1">
+    <div data-role="header" data-theme="d">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#menu" data-icon="grid"></a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div>
+    <div data-role="content" data-theme="d">
+        <center>
+            <img src="img/" style="border-radius: 5px; width: 360px;">
+            <h2>Estructura y Funcionamiento de la Máquina Abacus</h2>  
+        </center> 
+        <p>La máquina Abacus, o ábaco, es uno de los dispositivos de cálculo más antiguos, usado desde hace miles de años en diferentes culturas. Se compone de un marco rectangular y varillas paralelas que sostienen cuentas móviles, y permite realizar operaciones matemáticas como suma, resta, multiplicación y división</p>
+        <h1>Estructura del Ábaco</h1>
+        <p>Marco: Es la estructura que sostiene el ábaco, hecha generalmente de madera, aunque en la actualidad también puede estar fabricada en plástico o metal.
+            Varillas: Dentro del marco, hay varillas o barras paralelas (generalmente verticales) donde se colocan las cuentas. Cada varilla representa una posición decimal (unidades, decenas, centenas, etc.).
+            Cuentas: Son las bolas o discos que se deslizan a lo largo de las varillas. Las cuentas se dividen en dos grupos principales:
+            Cuentas de la parte superior: Representan valores específicos (en algunos modelos como el ábaco chino, las cuentas superiores valen cinco unidades).
+            Cuentas de la parte inferior: Representan una unidad cada una y son usadas en las operaciones básicas.</p>
+            <h1>Funcionamiento del Ábaco</h1>
+            <p>El ábaco opera mediante el movimiento de las cuentas sobre las varillas para representar diferentes números. El usuario mueve las cuentas hacia una barra central (barra divisoria), y la posición de estas indica el valor numérico. Cada cuenta que se acerca a la barra representa un valor, mientras que las que se mantienen alejadas no cuentan en el cálculo</p>
+            <h2>Operaciones Básicas</h2>
+            <p>Suma: Se representan los valores de los números que se desean sumar desplazando las cuentas hacia la barra central. Luego, se añaden las cuentas de cada columna correspondiente, gestionando los valores excedentes (llevando, si es necesario).
+                Resta: Similar a la suma, se representan los valores y luego se retiran las cuentas necesarias para completar la resta.
+                
+                Multiplicación: Se realiza sumando de manera repetida o configurando las columnas del ábaco para multiplicar cada dígito en un formato adecuado.
+                
+                División: Se lleva a cabo mediante restas sucesivas, moviendo las cuentas de una forma similar a cómo se realizan las divisiones manuales en papel.</p>
+        </div>
+</div>
+
+<div data-role="page" id="pag2">
+    <div data-role="header" data-theme="d">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#menu" data-icon="grid"></a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div>
+    <div data-role="content" data-theme="d">  
+        <center>
+            <img src="img/" style="border-radius: 5px; width: 360px;">
+            <h2>Características de la Máquina Super Abacus</h2>  
+        </center> 
+        <p>La máquina Super Abacus es una versión avanzada y moderna del ábaco tradicional. A diferencia del ábaco clásico, el Super Abacus está diseñado para realizar cálculos complejos y brindar una mayor versatilidad en su uso, incorporando avances tecnológicos para mejorar la precisión y velocidad de los cálculos. A continuación, se describen algunas de sus características más destacadas:</p>
+        <h2>Estructura Avanzada</h2>
+        <p>El Super Abacus mantiene un diseño de marco rectangular con varillas y cuentas, pero sus materiales son más duraderos y ligeros, como el plástico de alta resistencia o el metal.
+            La disposición de las cuentas puede variar según el modelo, y algunas versiones incluyen más varillas y cuentas que el ábaco tradicional, lo que permite un mayor rango de valores y precisión.</p>
+            <h2>Cuentas Codificadas por Color</h2>
+            <p>Las cuentas están codificadas por colores para representar diferentes valores o funciones, facilitando la identificación y la visualización de operaciones más complejas.
+                Los colores ayudan a los usuarios a seguir las operaciones paso a paso y a identificar patrones rápidamente.</p>
+                <h2>Sistema de Valor Posicional</h2>
+                <p>Similar al ábaco tradicional, el Super Abacus utiliza un sistema posicional en el que cada varilla representa una posición decimal (unidades, decenas, centenas, etc.).
+                    En algunos modelos avanzados, las posiciones pueden adaptarse para realizar cálculos en bases diferentes (como binario, hexadecimal), lo que lo hace útil para cálculos especializados.</p>
+                    <h2>Operaciones Ampliadas</h2>
+                    <p>Permite realizar no solo las operaciones básicas de suma, resta, multiplicación y división, sino también cálculos más complejos como raíces cuadradas, potencias y operaciones de fraccionarios mediante técnicas específicas.
+                        Algunos modelos cuentan con instrucciones grabadas o marcadores que guían al usuario para realizar operaciones avanzadas.</p>
+                        <h2>Versión Digital o Electrónica</h2>
+                        <p>Hay versiones de Super Abacus que integran componentes electrónicos o digitales, permitiendo realizar cálculos automáticos y mostrando los resultados en una pequeña pantalla LED o LCD.
+                            Estos modelos pueden incluir funciones adicionales como memoria para almacenar valores y la capacidad de mostrar cálculos intermedios.</p>
+    </div>
+</div>
+
+<div data-role="page" id="pag3">
+    <div data-role="header" data-theme="d">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#menu" data-icon="grid"></a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div>
+    <div data-role="content" data-theme="d">  
+        <center>
+            <img src="img/" style="border-radius: 5px; width: 360px;">
+            <h2>Arquitectura de Von Neumann</h2>  
+        </center> 
+        <p>La arquitectura de Von Neumann es un modelo de diseño para computadoras que organiza los componentes básicos del sistema en tres partes principales:</p>
+            <li>Unidad Central de Procesamiento (CPU): Responsable de ejecutar las instrucciones. Se divide en la Unidad de Control (interpreta instrucciones) y la Unidad Aritmético-Lógica (realiza cálculos y operaciones lógicas).</li>
+            <li>Memoria: Almacena tanto los datos como las instrucciones del programa en el mismo lugar, lo cual permite que la CPU acceda a ellos secuencialmente.</li>
+            <li>Dispositivos de Entrada y Salida (I/O): Permiten la comunicación entre la computadora y el usuario o el entorno externo.</li>
+        <p>El flujo de trabajo en esta arquitectura sigue el ciclo de "fetch-decode-execute": la CPU obtiene (fetch) una instrucción desde la memoria, la decodifica (decode) y luego la ejecuta (execute).</p>
+    </div>
+</div>
+
+<div data-role="page" id="pag4">
+    <div data-role="header" data-theme="d">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#menu" data-icon="grid"></a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div>
+    <div data-role="content" data-theme="d">  
+        <center>
+            <img src="img/odpcs12345ram.gif" style="border-radius: 5px; width: 360px;">
+            <h2>Memoria Principal y Memoria Secundaria</h2>  
+        </center> 
+        <p>La memoria principal y la memoria secundaria son dos tipos de almacenamiento en una computadora, cada uno con funciones y características específicas:</p>
+        <h1>Memoria Principal (RAM)</h1>
+        <li>Características: Es rápida, volátil (pierde datos al apagarse) y permite acceso directo a los datos.</li>
+        <li>Función: Almacena temporalmente los datos y programas en ejecución para que la CPU pueda acceder rápidamente a ellos.</li>
+        <li>Ejemplos: RAM (Memoria de Acceso Aleatorio) y caché.</li>
+        <h1>Memoria Secundaria</h1>
+        <li>Características: Es más lenta que la memoria principal, pero no volátil (retiene datos aunque se apague la computadora) y tiene mayor capacidad de almacenamiento.</li>
+        <li>Función: Almacena datos y programas de manera permanente, incluyendo el sistema operativo, aplicaciones y archivos personales.</li>
+        <li>Ejemplos: Disco duro (HDD), unidad de estado sólido (SSD), unidades ópticas (CD/DVD) y memorias externas (USB)</li>
+    </div>
+</div>
+
+<div data-role="page" id="pag5">
+    <div data-role="header" data-theme="d">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#menu" data-icon="grid"></a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div>
+    <div data-role="content" data-theme="d">  
+        <center>
+            <img src="img/odpcs12345discos.jpg" style="border-radius: 5px; width: 360px;">
+            <h2>Unidades de Almacenamiento</h2>  
+        </center> 
+        <p>Las unidades de almacenamiento son dispositivos o componentes donde se guardan datos digitales en una computadora. Existen diferentes tipos de unidades, clasificadas principalmente según su tecnología, capacidad y velocidad de acceso.</p>
+        <h1>Principales Unidades de Almacenamiento</h1>
+        <li><h2>Unidad de Estado Sólido (SSD)</h2></li>
+        <p>Tecnología de almacenamiento basado en memoria flash.
+            Ventajas: Alta velocidad, durabilidad y bajo consumo de energía.
+            Uso: Almacenamiento principal en computadoras modernas, especialmente en laptops.</p>
+            <li><h2>Disco Duro (HDD)</h2>Almacenamiento basado en platos magnéticos giratorios.
+                Ventajas: Gran capacidad de almacenamiento a bajo costo.
+                Uso: Almacenamiento de datos masivo, común en computadoras de escritorio y servidores.</li>
+                <li><h2>Unidad de Memoria USB (Pendrive)</h2>Dispositivo portátil de almacenamiento basado en memoria flash.
+                    Ventajas: Portabilidad y compatibilidad universal.
+                    Uso: Transferencia y respaldo de datos.</li>
+                    <li><h2>Tarjeta de Memoria (SD, microSD)</h2>Tarjetas de almacenamiento flash usadas en dispositivos móviles y cámaras.
+                        Ventajas: Pequeño tamaño y buena capacidad.
+                        Uso: Almacenamiento en cámaras, teléfonos, y otros dispositivos móviles.</li>
+                        <li><h2>Unidad Óptica (CD, DVD, Blu-ray)</h2>Almacena datos en discos ópticos que se leen mediante láser.
+                            Ventajas: Buena opción para la distribución de medios y almacenamiento a largo plazo.
+                            Uso: Almacenamiento de archivos multimedia y software.</li>
+                            <li><h2>Almacenamiento en la Nube</h2>Espacio de almacenamiento en servidores remotos accesibles por internet.
+                                Ventajas: Acceso desde cualquier lugar y respaldo automático.
+                                Uso: Almacenamiento de datos personales y empresariales.</li>
+    </div>
+</div>
+
+<div data-role="page" id="pag6">
+    <div data-role="header" data-theme="d">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#menu" data-icon="grid"></a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div>
+    <div data-role="content" data-theme="d">  
+        <center>
+            <img src="img/odpcs12345.gif" style="border-radius: 5px; width: 360px;">
+            <h2>Ciclo de Instrucción del Procesador</h2>  
+        </center> 
+        <p>El ciclo de instrucción del procesador es el proceso que sigue la CPU para ejecutar una instrucción de un programa. Este ciclo se repite continuamente mientras el procesador esté en funcionamiento y consta de tres fases principales:</p>
+        <li>1. Búsqueda (Fetch)</li>
+        <p>La CPU obtiene la instrucción desde la memoria principal (RAM), usando el contador de programa para saber qué instrucción cargar.
+            La instrucción es cargada en el registro de instrucción dentro de la CPU.</p>
+            <li>2. Decodificación (Decode)</li>
+            <p>La Unidad de Control interpreta la instrucción y determina qué acción debe llevar a cabo la CPU.
+                En esta etapa, la instrucción se descompone en sus partes fundamentales (código de operación y operandos)</p>
+                <li>3. Ejecución (Execute)</li>
+                <p>La CPU realiza la operación especificada, que puede ser un cálculo, un movimiento de datos, o una operación de E/S.
+                    Los resultados pueden almacenarse en un registro o enviarse a la memoria.</p>
+                    <p>Al final de este ciclo, la CPU pasa a la siguiente instrucción y repite el proceso, asegurando la ejecución continua de las operaciones del programa.</p>
+        <center>
+            <img src="img/odpcs1234.gif" style="border-radius: 5px; width: 360px;">
+        </center> 
+    </div>
+</div>
+
+<div data-role="page" id="pag7">
+    <div data-role="header" data-theme="d">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#menu" data-icon="grid"></a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div>
+    <div data-role="content" data-theme="d">  
+        <center>
+            <img src="img/odpcs1.gif" style="border-radius: 5px; width: 360px;">
+            <h2>Evaluación y Pruebas</h2>  
+        </center> 
+        <p>Accede a una serie de pruebas y evaluaciones diseñadas para medir tu comprensión sobre los temas de la materia. Estas pruebas incluirán ejercicios prácticos de apareamiento, preguntas de opción múltiple y problemas de análisis.</p>
+    </div>
+</div>
+
+<div data-role="page" id="pag8">
+    <div data-role="header" data-theme="d">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#menu" data-icon="grid"></a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div>
+    <div data-role="content" data-theme="d">  
+        <center>
+            <img src="img/odpcs12.gif" style="border-radius: 5px; width: 360px;">
+            <h2>Tendencias Futuras en la Organización de Computadores</h2>  
+        </center> 
+        <p>Las tendencias futuras en la organización de computadores están marcadas por avances en rendimiento, eficiencia energética, y capacidades especializadas. A continuación, se destacan algunas de las principales tendencias:</p>
+        <li>1. Arquitecturas de Procesamiento Paralelo</li>
+        <p>Descripción: El uso de múltiples núcleos y unidades de procesamiento en paralelo para mejorar la velocidad y capacidad de cálculo.
+            Ejemplo: GPUs, TPUs y arquitecturas de procesamiento multinúcleo.
+            Objetivo: Soportar cargas de trabajo intensivas como inteligencia artificial (IA), simulaciones científicas y gráficos.</p>
+            <li>2. Computación Cuántica</li>
+            <p>Descripción: Uso de qubits que pueden representar múltiples estados a la vez, permitiendo cálculos exponencialmente más rápidos en ciertos problemas.
+                Ejemplo: Algoritmos para optimización, criptografía y simulaciones moleculares.
+                Objetivo: Resolver problemas complejos inabordables para los computadores clásicos.</p>
+                <li>3. Memoria Unificada o Integrada</li>
+                <p>Descripción: Integración de memoria y procesamiento en una sola arquitectura para reducir la latencia y aumentar la velocidad.
+                    Ejemplo: Tecnologías como HBM (High Bandwidth Memory) y chips de memoria integrados en la misma oblea que el procesador.
+                    Objetivo: Mejorar la eficiencia y reducir el tiempo de transferencia de datos entre la CPU y la memoria.</p>
+                    <li>4. Computación Neuromórfica</li>
+                    <p>Descripción: Arquitecturas que imitan la estructura del cerebro humano, usando redes neuronales y circuitos especializados para tareas de IA.
+                        Ejemplo: Chips neuromórficos desarrollados por empresas como Intel (Loihi) para aplicaciones en aprendizaje profundo.
+                        Objetivo: Mejorar la eficiencia energética y la capacidad de procesamiento en tareas de reconocimiento de patrones y aprendizaje.</p>
+                        <li>5. Optimización Energética y Computación Verde</li>
+                        <p>Descripción: Arquitecturas diseñadas para reducir el consumo de energía y la huella ambiental.
+                            Ejemplo: Chips de bajo consumo, arquitecturas ARM y la transición hacia centros de datos sostenibles.
+                            Objetivo: Disminuir el impacto ambiental y aumentar la eficiencia en aplicaciones de alto rendimiento.</p>
+                            <li>6. Almacenamiento y Procesamiento en el Borde (Edge Computing)</li>
+                            <p>Descripción: Procesamiento y almacenamiento más cerca del lugar donde se generan los datos, en dispositivos periféricos.
+                                Ejemplo: Procesadores y sensores IoT con capacidades de análisis en el mismo dispositivo.
+                                Objetivo: Reducir la latencia y el ancho de banda necesario para aplicaciones de IoT, salud y automóviles autónomos.</p>
+                                <li>7. Seguridad Basada en Hardware</li>
+                                <p>Descripción: Integración de funciones de seguridad directamente en la arquitectura de hardware.
+                                    Ejemplo: Módulos de seguridad TPM, enclaves de seguridad y cifrado en hardware.
+                                    Objetivo: Mejorar la protección contra ataques físicos y cibernéticos, asegurando datos y operaciones sensibles.</p>
+                                    <li>8. Inteligencia Artificial y Procesadores Especializados</li>
+                                    <p>Descripción: Uso de hardware especializado para acelerar aplicaciones de IA y aprendizaje automático.
+                                        Ejemplo: TPUs de Google y aceleradores de IA en chips como los de Apple y Qualcomm.
+                                        Objetivo: Optimizar el rendimiento en aplicaciones de IA, logrando una mayor eficiencia en entrenamiento y despliegue de modelos.</p>
+    </div>
+</div>
+
+<div data-role="page" id="pag9">
+    <div data-role="header" data-theme="d">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#menu" data-icon="grid"></a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div>
+    <div data-role="content" data-theme="d">  
+        <center>
+            <img src="img/" style="border-radius: 5px; width: 360px;">
+            <h2></h2>  
+        </center> 
+        <p>Next</p>
+    </div>
+</div>
+
+</body>
+</html>
